@@ -150,7 +150,7 @@ parse_commandline "$@"
 
 declare -a a1
 declare -A a2
-readarray  a1 <~/Dropbox/Scripts/StreamList.txt
+readarray  a1 <StreamList.txt
 for i in "${!a1[@]}"
 do
 	if  [[ $(( i % 2 ))  -eq 0 ]]
